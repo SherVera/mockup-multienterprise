@@ -34,16 +34,16 @@
       </q-toolbar>
 
       <q-bar inset class="bg-grey-9" style="padding: 5px 2% 5px 2%;height: 40px">
-        <div class="row full-width" style="display: flex; justify-content: space-between">
-          <div class="row">
+        <div class="row full-width" style="display: flex;">
+          <div class="col-auto">
             <q-btn size="10px" padding="0px 15px" outline color="grey-3" label="Crear nuevo encargo" icon-right="add" no-caps style="height: 30px;"/>
             <q-btn size="10px" padding="0px 15px" outline color="grey-3" label="Seleccionar Cliente" icon-right="mdi-database" no-caps class="q-ml-md" style="height: 30px;" />
-            <div style="display: flex;justify-content: center;align-items: center;margin-top: 0px; margin-left: 40px"><span style="display: inline-block; vertical-align: top;font-size: 9pt">{{ title }}</span></div>
           </div>
-          <div style="margin-top: 0px; flex-grow: 2">
-            <q-btn size="12px" padding="0px 15px" style="position: relative;float: right;height: 30px;" outline color="grey-3" label="Cerrar Sesion" no-caps class="q-ml-md"  />
+          <div class="col-md" style="display: flex;justify-content: center;align-items: center;margin-top: 0px;"><span style="font-size: 9pt">{{ title }}</span></div>
           </div>
-        </div>
+          <div class="col-auto" style="margin-top: 0px;">
+            <q-btn size="14px" padding="0px 15px" style="position: relative;float: right;height: 30px;" outline color="grey-3" label="Cerrar Sesion" no-caps class="q-ml-md"  />
+          </div>
       </q-bar>
     </q-header>
     <q-footer elevated>
